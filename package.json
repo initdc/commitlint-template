@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "commit": "commit",
+    "fmt:c": "prettier -c .",
+    "fmt:w": "prettier -w .",
+    "rel": "standard-version --help",
+    "rel:d": "standard-version --dry-run",
+    "rel:d:as": "standard-version --dry-run --release-as",
+    "rel:d:m": "standard-version --dry-run --release-as major",
+    "rel:d:n": "standard-version --dry-run --release-as minor",
+    "rel:d:p": "standard-version --dry-run --release-as patch",
+    "rel:v": "standard-version",
+    "rel:v:as": "standard-version --release-as",
+    "rel:v:m": "standard-version --release-as major",
+    "rel:v:n": "standard-version --release-as minor",
+    "rel:v:p": "standard-version --release-as patch",
+    "pub:g": "conventional-github-releaser -v",
+    "pub:n": "npm publish",
+    "postinstall": "pnpm husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/prompt-cli": "^15.0.0",
+    "conventional-github-releaser": "^3.1.5",
+    "husky": "^7.0.4",
+    "standard-version": "^9.3.2"
+  }
+}
