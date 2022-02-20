@@ -4,8 +4,8 @@
   },
   "scripts": {
     "commit": "commit",
-    "fmt:c": "prettier -c .",
-    "fmt:w": "prettier -w .",
+    "fmt:c": "prettier -cu .",
+    "fmt:w": "prettier -wu .",
     "rel": "standard-version --help",
     "rel:d": "standard-version --dry-run",
     "rel:d:as": "standard-version --dry-run --release-as",
